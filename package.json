@@ -1,0 +1,9 @@
+{
+  "name": "vuex-toolkit",
+  "version": "0.0.1",
+  "description": "Vuex Toolkit. An alternative API for Vuex.",
+  "main": "index.ts",
+  "repository": "git@github.com:banderror/vuex-toolkit.git",
+  "author": "Georgii (Egor) Gorbachev <hey.gorbachev@gmail.com>",
+  "license": "MIT"
+}
