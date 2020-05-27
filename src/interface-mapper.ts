@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { Store } from 'vuex';
-import { Saga } from 'redux-saga';
+import { Saga } from '@redux-saga/types';
 import {
   MessageDefinition,
   MutationDefinition,
@@ -12,7 +12,7 @@ import {
   isGetterDefinition,
 } from './base-types';
 
-import { isGeneratorFunction } from '../objects';
+import { isGeneratorFunction } from './utils/objects';
 
 // ---------------------------------------------------------------------------------------------------------------------
 // API

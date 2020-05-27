@@ -23,7 +23,7 @@ import {
 } from './base-types';
 
 import { GetterDefinitionBuilder } from './getter-definition-builder';
-import { Binder } from '../binder';
+import { Binder } from './utils/binder';
 
 interface MutationRegistration<S> {
   definition: MutationDefinition<any>;

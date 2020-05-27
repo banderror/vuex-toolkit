@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-param-reassign */
 
-import { Binder } from '../binder';
+import { Binder } from './utils/binder';
 import { NamespaceInfo } from './namespace-info';
 import {
   GetterNameDefinition,
