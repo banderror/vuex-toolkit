@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "clean": "rimraf lib",
-    "dev": "yarn clean && tsc --watch",
-    "build": "yarn clean && tsc"
+    "dev": "yarn clean && microbundle watch",
+    "build": "yarn clean && microbundle"
   },
   "dependencies": {
     "lodash": "^4.17.19",
@@ -25,8 +25,12 @@
     "vue": "2.x.x",
     "vuex": "3.x.x"
   },
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "source": "src/index.ts",
+  "main": "lib/vuex-toolkit.cjs.js",
+  "module": "lib/vuex-toolkit.esm.js",
+  "esmodule": "lib/vuex-toolkit.modern.js",
+  "unpkg": "lib/vuex-toolkit.umd.js",
+  "types": "lib/vuex-toolkit.d.ts",
   "files": [
     "/lib"
   ],
