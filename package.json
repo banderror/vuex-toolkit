@@ -18,6 +18,7 @@
   "devDependencies": {
     "@redux-saga/types": "^1.1.0",
     "@types/lodash": "^4.14.151",
+    "microbundle": "^0.12.3",
     "redux": "4.x.x",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.7",
