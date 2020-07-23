@@ -1,20 +1,40 @@
 {
   "name": "vuex-toolkit",
-  "version": "0.0.1",
   "description": "Vuex Toolkit. An alternative API for Vuex.",
-  "main": "src/index.ts",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rimraf lib",
+    "dev": "yarn clean && tsc --watch",
+    "build": "yarn clean && tsc"
+  },
   "dependencies": {
-    "@redux-saga/types": "^1.1.0",
     "lodash": "^4.17.19",
-    "vuex": "3.x.x"
+    "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "redux-saga": "1.x.x"
+    "redux-saga": "1.x.x",
+    "vuex": "3.x.x"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.151"
+    "@redux-saga/types": "^1.1.0",
+    "@types/lodash": "^4.14.151",
+    "redux": "4.x.x",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7",
+    "vue": "2.x.x",
+    "vuex": "3.x.x"
   },
-  "repository": "git@github.com:banderror/vuex-toolkit.git",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
   "author": "Georgii (Egor) Gorbachev <hey.gorbachev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "banderror/vuex-toolkit",
+  "homepage": "https://github.com/banderror/vuex-toolkit",
+  "bugs": "https://github.com/banderror/vuex-toolkit/issues",
+  "keywords": [
+    "vuex"
+  ]
 }
