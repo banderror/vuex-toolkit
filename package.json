@@ -20,6 +20,7 @@
     "@types/lodash": "^4.14.151",
     "redux": "4.x.x",
     "rimraf": "^3.0.2",
+    "tsdx": "^0.13.2",
     "typescript": "^3.9.7",
     "vue": "2.x.x",
     "vuex": "3.x.x"
