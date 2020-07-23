@@ -32,7 +32,8 @@
   "unpkg": "lib/vuex-toolkit.umd.js",
   "types": "lib/vuex-toolkit.d.ts",
   "files": [
-    "/lib"
+    "/lib",
+    "/src"
   ],
   "author": "Georgii (Egor) Gorbachev <hey.gorbachev@gmail.com>",
   "license": "MIT",
