@@ -1,8 +1,12 @@
 {
   "name": "vuex-toolkit",
-  "version": "0.0.1",
   "description": "Vuex Toolkit. An alternative API for Vuex.",
-  "main": "src/index.ts",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rimraf lib",
+    "dev": "yarn clean && tsc --watch",
+    "build": "yarn clean && tsc"
+  },
   "dependencies": {
     "lodash": "^4.17.19",
     "tslib": "^2.0.0"
@@ -20,7 +24,17 @@
     "vue": "2.x.x",
     "vuex": "3.x.x"
   },
-  "repository": "git@github.com:banderror/vuex-toolkit.git",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
   "author": "Georgii (Egor) Gorbachev <hey.gorbachev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "banderror/vuex-toolkit",
+  "homepage": "https://github.com/banderror/vuex-toolkit",
+  "bugs": "https://github.com/banderror/vuex-toolkit/issues",
+  "keywords": [
+    "vuex"
+  ]
 }
