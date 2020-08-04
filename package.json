@@ -6,6 +6,7 @@
     "clean": "rimraf lib && rimraf lib-types",
     "dev": "yarn clean && microbundle watch",
     "build": "yarn clean && microbundle",
+    "release": "np",
     "prepack": "yarn build"
   },
   "engines": {
@@ -48,5 +49,9 @@
   "bugs": "https://github.com/banderror/vuex-toolkit/issues",
   "keywords": [
     "vuex"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
 }
