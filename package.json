@@ -8,6 +8,10 @@
     "build": "yarn clean && microbundle",
     "prepack": "yarn build"
   },
+  "engines": {
+    "node": "12.18.1",
+    "yarn": "1.22.4"
+  },
   "dependencies": {
     "lodash": "^4.17.19"
   },
