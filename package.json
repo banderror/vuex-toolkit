@@ -1,7 +1,7 @@
 {
   "name": "vuex-toolkit",
   "description": "Vuex Toolkit. An alternative API for Vuex.",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "scripts": {
     "clean": "rimraf lib && rimraf lib-types",
     "dev": "yarn clean && microbundle watch",
