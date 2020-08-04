@@ -3,7 +3,7 @@
   "description": "Vuex Toolkit. An alternative API for Vuex.",
   "version": "0.0.1",
   "scripts": {
-    "clean": "rimraf lib",
+    "clean": "rimraf lib && rimraf lib-types",
     "dev": "yarn clean && microbundle watch",
     "build": "yarn clean && microbundle",
     "prepare": "yarn build"
@@ -27,13 +27,14 @@
     "vuex": "3.x.x"
   },
   "source": "src/index.ts",
-  "main": "lib/vuex-toolkit.cjs.js",
+  "main": "lib/vuex-toolkit.js",
   "module": "lib/vuex-toolkit.esm.js",
   "esmodule": "lib/vuex-toolkit.modern.js",
   "unpkg": "lib/vuex-toolkit.umd.js",
-  "types": "lib/vuex-toolkit.d.ts",
+  "types": "lib-types/index.d.ts",
   "files": [
     "/lib",
+    "/lib-types",
     "/src"
   ],
   "author": "Georgii (Egor) Gorbachev <hey.gorbachev@gmail.com>",
