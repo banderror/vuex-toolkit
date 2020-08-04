@@ -132,7 +132,7 @@ export class ModuleDefinitionBuilder<S, R> implements ModuleDefinition<S, R> {
 
     return {
       namespaced: false,
-      state: this._initialState,
+      state: this._initialState !== undefined ? () => this._initialState as S : undefined,
       mutations,
       actions,
       getters,
