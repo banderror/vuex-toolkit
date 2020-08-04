@@ -9,8 +9,7 @@
     "prepare": "yarn build"
   },
   "dependencies": {
-    "lodash": "^4.17.19",
-    "tslib": "^2.0.0"
+    "lodash": "^4.17.19"
   },
   "peerDependencies": {
     "redux-saga": "1.x.x",
