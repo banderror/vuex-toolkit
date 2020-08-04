@@ -6,7 +6,7 @@
     "clean": "rimraf lib && rimraf lib-types",
     "dev": "yarn clean && microbundle watch",
     "build": "yarn clean && microbundle",
-    "prepare": "yarn build"
+    "prepack": "yarn build"
   },
   "dependencies": {
     "lodash": "^4.17.19"
