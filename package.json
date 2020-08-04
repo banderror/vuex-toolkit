@@ -3,13 +3,13 @@
   "description": "Vuex Toolkit. An alternative API for Vuex.",
   "version": "0.0.1",
   "scripts": {
-    "clean": "rimraf lib",
-    "dev": "yarn clean && tsc --watch",
-    "build": "yarn clean && tsc"
+    "clean": "rimraf lib && rimraf lib-types",
+    "dev": "yarn clean && microbundle watch",
+    "build": "yarn clean && microbundle",
+    "prepare": "yarn build"
   },
   "dependencies": {
-    "lodash": "^4.17.19",
-    "tslib": "^2.0.0"
+    "lodash": "^4.17.19"
   },
   "peerDependencies": {
     "redux-saga": "1.x.x",
@@ -18,16 +18,23 @@
   "devDependencies": {
     "@redux-saga/types": "^1.1.0",
     "@types/lodash": "^4.14.151",
+    "microbundle": "^0.12.3",
     "redux": "4.x.x",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.7",
     "vue": "2.x.x",
     "vuex": "3.x.x"
   },
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "source": "src/index.ts",
+  "main": "lib/vuex-toolkit.js",
+  "module": "lib/vuex-toolkit.esm.js",
+  "esmodule": "lib/vuex-toolkit.modern.js",
+  "unpkg": "lib/vuex-toolkit.umd.js",
+  "types": "lib-types/index.d.ts",
   "files": [
-    "/lib"
+    "/lib",
+    "/lib-types",
+    "/src"
   ],
   "author": "Georgii (Egor) Gorbachev <hey.gorbachev@gmail.com>",
   "license": "MIT",

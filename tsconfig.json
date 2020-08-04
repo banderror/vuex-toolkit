@@ -1,19 +1,17 @@
 {
+  "include": ["src"],
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
-    "rootDir": "src",
-    "outDir": "lib",
+    "esModuleInterop": true,
+    "importHelpers": true,
+
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "importHelpers": true,
-    "esModuleInterop": true,
+
     "strict": true,
     "noImplicitAny": false
-  },
-  "include": [
-    "src/**/*"
-  ]
+  }
 }

@@ -5,6 +5,7 @@
 
 # Build output
 /lib
+/lib-types
 
 # Logs and temp files
 /tmp
